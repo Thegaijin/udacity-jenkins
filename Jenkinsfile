@@ -13,8 +13,7 @@ pipeline {
          }
          stage('Lint HTML') {
               steps {
-                //   sh 'tidy -q -e *.html'
-                 sh 'echo "This is not working, not sure why yet"'
+                  sh 'tidy -q -e *.html'
               }
          }
          stage('Security Scan') {
